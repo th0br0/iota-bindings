@@ -1,0 +1,22 @@
+[package]
+name = "java"
+version = "0.1.0"
+authors = ["Andreas C. Osowski <andreas@osowski.de>"]
+
+[lib]
+name = "iotajni"
+crate-type = ["dylib"]
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+jni = "*"
+iota-mam = { git = "https://github.com/iotaledger/MAM.git" }
+iota-merkle = { git = "https://github.com/iotaledger/iota.rs.git" }
+iota-curl = { git = "https://github.com/iotaledger/iota.rs.git" }
+iota-curl-cpu = { git = "https://github.com/iotaledger/iota.rs.git" }
+iota-trytes = { git = "https://github.com/iotaledger/iota.rs.git" }
+iota-bindings-shared = { path = "../../shared" }
+cty = { git = "https://github.com/japaric/cty.git" }
+
