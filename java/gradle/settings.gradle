@@ -8,5 +8,6 @@
  * in the user guide at https://docs.gradle.org/4.2.1/userguide/multi_project_builds.html
  */
 
-include 'shared'
+include ':shared'
+include ':exampleapp'
 
